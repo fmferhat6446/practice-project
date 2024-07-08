@@ -76,28 +76,28 @@
 //practice3..................................................
 
 
-let score = prompt("enter your score (0-100):");
-let grade;
+// let score = prompt("enter your score (0-100):");
+// let grade;
 
-if(score >=80 && score <=100){
-    grade = "A";
-}
+// if(score >=80 && score <=100){
+//     grade = "A";
+// }
 
-else if(score >=60 && score <=79){
-    grade = "B";
-}
+// else if(score >=60 && score <=79){
+//     grade = "B";
+// }
 
-else if(score >=40 && score <=59){
-    grade = "C";
-}
+// else if(score >=40 && score <=59){
+//     grade = "C";
+// }
 
-else if(score >=33 && score <=39){
-    grade = "D";
-}
+// else if(score >=33 && score <=39){
+//     grade = "D";
+// }
 
-else{
-   grade = "you are fail";
+// else{
+//    grade = "you are fail";
 
-}
+// }
 
-console.log("according to your scores, your grade was : ", grade);
+// console.log("according to your scores, your grade was : ", grade);
