@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<body class="font-mono bg-slate-800 grid place-content-center h-screen" >
+<body class="font-mono bg-slate-800 text-white " >
 
-  <section class="p-6 max-w-sm mx-auto bg-white rounded-xl flex items-center space-x-4">
-    <div>
-      <div><img class="max-w-40 max-h-40 rounded-2xl" src="src/image/logo.jpg" alt="logo-img"></div>
-    </div>
-    <div>
-      <p class="uppercase ">Tailwind CSS</p>
-      <p class="uppercase underline text-center font-bold decoration-slate-300 ">BY ferhat</p>
+ <!-- navbar -->
+<nav class="p-6 flex justify-between items-center">
+  <a href="#" class="flex gap-2 items-center">
+    <img class="object-cover max-w-12 max-h-12" src="src/image/logo.jpg" alt="logo">
+    <span class="text-lg font-medium font-display">ToDex</span>
+  </a>
 
-      <button class="border bg-gray-400 rounded-md text-blue-600 p-1 mt-1 hover:bg-slate-500 hover:text-white transition-all" >know more</button>
-    </div>
-     
-    
-  </section>
+  <div id="nav-menu" class="hidden md:flex gap-10">
+    <a href="#" class="font-medium hover:text-primary">about</a>
+    <a href="#" class="font-medium hover:text-primary">pricing</a>
+    <a href="#" class="font-medium hover:text-primary">docs</a>
+    <a href="#" class="font-medium hover:text-primary">blogs</a>
+    <a href="#" class="font-medium hover:text-primary">login</a>
+  </div>
+
+  <button class="hidden md:flex gap-2 items-center border border-gray-400 rounded-lg px-4 py-2 hover:border-gray-200 ">
+    <i class="fa-brands fa-connectdevelop"></i>
+    Developers
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+
+
+  <button class="p-2 md:hidden" onclick="handleMenu()">
+    <i class="fa-solid fa-bars text-white-600"></i>
+  </button>
+</nav>
+
 
   <script src="fizz.js"></script>
 </body>

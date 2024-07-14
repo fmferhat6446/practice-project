@@ -101,3 +101,11 @@
 // }
 
 // console.log("according to your scores, your grade was : ", grade);
+
+
+
+// navbar..............................
+function handleMenu() {
+    
+    
+}
